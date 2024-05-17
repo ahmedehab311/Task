@@ -77,7 +77,7 @@ function Header({onButtonClick, isFiltersVisible }){
         </div>
         <img src={icon} alt="" className="icon-search" />
         <button className="filters-button" onClick={onButtonClick}>
-        Toggle Filters
+        Filters
       </button>
      
       </div>
