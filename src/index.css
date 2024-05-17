@@ -1,0 +1,34 @@
+:root {
+  --dark-color: Black;
+  --light-color: white;
+  --Accent-color: #53acff;
+  --Orange: #d94111;
+  --Green: #118f4b;
+  --font-wight-Headings: bold;
+  --font-wight-Filters: 600;
+  --font-wight-alerts: 400;
+}
+* {
+  font-family: "Poppins";
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #202020;
+  color: var(--light-color);
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
