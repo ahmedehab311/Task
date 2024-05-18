@@ -8,14 +8,9 @@ import photo3 from "../../images/c.svg";
 import photo4H from "../../images/high d.svg";
 import photo5D from "../../images/low d.svg";
 import "./header.css";
-import { AsyncPaginate } from "react-select-async-paginate";
-import {
-  Accordion,
-  AccordionItem,
-  AccordionItemButton,
-  AccordionItemHeading,
-  AccordionItemPanel,
-} from "react-accessible-accordion";
+
+
+
 function Header({ onButtonClick, isFiltersVisible }) {
   const [selectedFilters, setSelectedFilters] = useState([]);
 
