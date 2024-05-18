@@ -17,7 +17,7 @@ function Header({ onButtonClick, isFiltersVisible }) {
   //function section search
   const items = [
     { id: 1, name: "TSLA", value: "200" },
-    { id: 2, name: "ABQQ", value: "300" },
+    { id: 2, name: "AMZN", value: "300" },
     { id: 3, name: "MSFT", value: "400" },
     { id: 4, name: "PYPL", value: "500" },
   ];
@@ -31,29 +31,7 @@ function Header({ onButtonClick, isFiltersVisible }) {
     item.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
-  // data of selection
-  const data = [
-    {
-      id: "1",
-      value: "test1",
-    },
-    {
-      id: "2",
-      value: "test2",
-    },
-    {
-      id: "3",
-      value: "test3",
-    },
-    {
-      id: "4",
-      value: "test4",
-    },
-    {
-      id: "5",
-      value: "test5",
-    },
-  ];
+
   const [openSection, setOpenSection] = useState(null);
   const toggleAccordion = (id) => {
     setOpenSection(openSection === id ? 1 : id); 
