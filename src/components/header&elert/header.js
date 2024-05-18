@@ -94,7 +94,6 @@ const handleClick = (item) => {
             </button>
           </div>
         </div>
-<<<<<<< HEAD
       </header>
 
       <div className="alert-content">
@@ -131,13 +130,6 @@ const handleClick = (item) => {
           deal success is % and therebefore the recommended play{" "}
           <span>long/short</span> $ABC
         </p>
-=======
-        <img src={icon} alt="" className="icon-search" />
-        <button className="filters-button" onClick={onButtonClick}>
-        Filters
-      </button>
-     
->>>>>>> 1f9fea9845d622beeb8017fa4744a3fc54de7df7
       </div>
     )} */}
     <ul className="content" onClick={() => handleClick(item)}>
@@ -186,8 +178,4 @@ const handleClick = (item) => {
   );
 }
 
-<<<<<<< HEAD
 export default Header;
-=======
-export default Header
->>>>>>> 1f9fea9845d622beeb8017fa4744a3fc54de7df7
