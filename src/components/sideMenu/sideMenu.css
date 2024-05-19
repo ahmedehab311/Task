@@ -1,50 +1,81 @@
- .sidebar{
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 50px;
-    background-color: #181818;
-    padding: 10px 14px;
-    transition: .3s all;
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 50px;
+  background-color: #181818;
+  padding: 10px 14px;
+  transition: 0.3s all;
+}
+.sidebar:hover {
+  width: 200px;
+  z-index: 100;
+}
+.logo {
+  position: relative;
+  margin-bottom: 51px;
+  padding: 5px 3px;
+  transition: 0.3s all;
+}
+.logo img {
+  transition: 0.3s all;
+  width: 49px;
+  height: 49px;
+  transition: transform 0.3s;
+}
+.icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
- .logo{
-
-    position: relative;
-    margin-left: -20px;
-    margin-bottom: 51px;
-    padding: 5px 3px;
-} 
-.logo img{
-    transition: .3s all;
-    width: 49px;
-    height: 49px;
-}
-  .icons{
-display: flex;
-flex-direction: column;
-align-items: center;
+.icons li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  cursor: pointer;
 }
 
- .icons li{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-    cursor: pointer;
+.icons li p {
+  margin-left: 10px;
+  font-size: 15px;
+  font-weight: 400;
+  display: none;
+  transition: 0.5s;
 }
 
-.icons li p{
-margin-left: 10px;
-font-size: 15px;
-font-weight: 400;
-display: none;
+.icons li img {
+  width: 17.73px;
+  height: 17.73px;
+}
+.sidebar:hover .logo img {
+  transform: translateX(67px) translateY(23%) scale(1.6);
+  width: 60px;
+  height: 60px;
+}
+.sidebar {
+  width: 80px;
+  transition: 0.5s;
+}
+.sidebar:hover {
+  width: 200px;
 }
 
-.icons li img{
-    width: 17.73px;
-    height: 17.73px;
+.icons li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.sidebar:hover .icons li:hover {
+  color: #53acff;
+}
+.icons li p {
+  display: none;
+  margin-left: 10px;
+}
 
-    
+.sidebar:hover .icons li p {
+  display: inline;
 }
